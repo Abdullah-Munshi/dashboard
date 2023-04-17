@@ -47,7 +47,8 @@ ol {
   background-color: var(--primary_300);
 }
 .sidebar_menu a,
-.dropdown-menu ul a {
+.dropdown-menu ul a,
+.subpage_menu li a {
   display: block;
   font-size: var(--fs_sm);
   color: var(--secondary);
@@ -71,7 +72,8 @@ ol {
   stroke: var(--secondary);
 }
 .sidebar_menu li:hover a svg path,
-.dropdown-menu ul a:hover svg path {
+.dropdown-menu ul a:hover svg path,
+.box-btn:hover svg path {
   stroke: var(--primary);
 }
 .sidebar_menu [data-bs-toggle="collapse"] {
@@ -127,10 +129,27 @@ ol {
   border-radius: 6px;
   padding: 9px 16px !important;
   transition: 0.3s;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--secondary);
+}
+.box-btn svg {
+  margin-right: 6px;
+}
+.box-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
 }
 .box-btn:hover {
   border-color: var(--primary);
   color: var(--primary);
+}
+.box-btn.fill_primary:hover {
+  background-color: #454cdee8;
+  color: #fff;
+}
+.box-btn.fill_primary:hover svg path {
+  stroke: #fff;
 }
 .dropdown-menu.user-dropdown {
   min-width: 180px;
@@ -153,6 +172,53 @@ ol {
 /* main-content css start */
 .sidebar + .v-flex {
   margin-left: 250px;
+}
+
+.primary-title {
+  font-size: var(--fs_2xl);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.enquiry-wrap {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+.fill_primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.enquiry-right-zone .box-btn {
+  margin-left: 18px;
+}
+.subpage_menu {
+  border-bottom: 1px solid #ededed;
+}
+.subpage_menu li:not(:last-child) {
+  margin-right: 30px;
+}
+.advertisement {
+  margin-bottom: 25px;
+  background-color: #ededed;
+  border-radius: 6px;
+}
+.advertisement img {
+  border-radius: 6px;
+}
+.process-count {
+  background-color: var(--primary_300);
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 31px;
+  min-width: 31px;
+  text-align: center;
+  margin-left: 10px;
 }
 /* main-content css end */
 

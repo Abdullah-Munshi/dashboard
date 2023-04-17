@@ -23,6 +23,42 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
+    <!-- Modal Markup Start -->
+    <div
+      class="modal fade"
+      id="enquery"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Markup End -->
+
     <div class="page-wrapper">
       <div class="sidebar position-fixed top-0 bottom-0 vh-100">
         <div class="sidebar_inner">
@@ -679,7 +715,7 @@
                         </svg>
                       </a>
 
-                      <div class="dropdown-menu dropdown_style_one border-0">
+                      <!-- <div class="dropdown-menu dropdown_style_one border-0">
                         <ul class="h-100">
                           <li>
                             <a href="#" class="px-0 py-1">notification item</a>
@@ -694,7 +730,7 @@
                             <a href="#" class="px-0 py-1">notification item</a>
                           </li>
                         </ul>
-                      </div>
+                      </div> -->
                     </li>
                   </ul>
                   <ul class="user-part mb-0 p-0">
@@ -850,6 +886,134 @@
             </div>
           </div>
         </header>
+        <main class="main_content">
+          <div class="container-fluid px-4">
+            <div class="advertisement">
+              <img
+                src="assets/img/advertisement.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="enquiry-wrap">
+              <h2 class="primary-title mb-0">Enquiries</h2>
+              <div
+                class="enquiry-right-zone d-flex align-items-center justify-content-end"
+              >
+                <div class="dropdown">
+                  <button class="box-btn sort-btn bg-transparent">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.25 5.25H15.75"
+                        stroke="#787878"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M4.5 9H13.5"
+                        stroke="#787878"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M7.5 12.75H10.5"
+                        stroke="#787878"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    Filter
+                  </button>
+                  <div class="dropdown-menu border-0 sort-dropdown">
+                    <form action="#" class="sort-form">
+                      <div class="input-box">
+                        <label for="" class="d-block"
+                          >Select Enguiry Type</label
+                        >
+                        <select name="" id="" class="form-select">
+                          <option value="">Select</option>
+                          <option value="">Select 1</option>
+                          <option value="">Select 2</option>
+                        </select>
+                      </div>
+                      <div class="input-box">
+                        <label for="" class="d-block">Select Staff</label>
+                        <select name="" id="" class="form-select">
+                          <option value="">Select</option>
+                          <option value="">Select 1</option>
+                          <option value="">Select 2</option>
+                        </select>
+                      </div>
+
+                      <div class="twin-grid">
+                        <button type="submit" class="box-btn fill_primary">
+                          Apply
+                        </button>
+                        <button class="box-btn fill_black">Reset</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <button
+                  class="box-btn fill_primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#enquery"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.5 9H13.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9 13.5V4.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Add Enquiry
+                </button>
+              </div>
+            </div>
+
+            <ul class="subpage_menu d-flex align-items-center flex-wrap">
+              <li>
+                <a href="#" class="px-0 py-1 my-1"
+                  >Process Pool<span class="process-count d-inline-block"
+                    >20</span
+                  ></a
+                >
+              </li>
+              <li><a href="#" class="px-0 py-1 my-1">Today Follow Up</a></li>
+              <li>
+                <a href="#" class="px-0 py-1 my-1">Yesterday Follow Up</a>
+              </li>
+              <li>
+                <a href="#" class="px-0 py-1 my-1"
+                  >Missed Follow Up
+                  <span class="process-count d-inline-block">60</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </main>
         <footer class="footer-area mt-auto">
           <div class="container-fluid px-4">
             <p class="text-center m-0">
