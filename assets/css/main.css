@@ -29,9 +29,23 @@ ol {
 }
 
 /* sidebar css start */
+#overlay {
+  background-color: #000;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+#overlay.show {
+  opacity: 0.5;
+  visibility: visible;
+}
 .sidebar {
   border-right: 1px solid #ededed;
   width: 250px;
+  background-color: #fff;
+  transition: 0.3s;
+  z-index: 90;
 }
 .sidebar_inner {
   padding: 24px 10px;
@@ -232,3 +246,29 @@ ol {
   color: var(--secondary);
 }
 /* footer css end */
+
+/* media query */
+@media screen and (max-width: 1199px) {
+  .sidebar {
+    left: -100%;
+  }
+  .sidebar + .v-flex {
+    margin-left: 0;
+  }
+  .menu_bar {
+    background: none;
+    border: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -3px;
+  }
+  .header-area {
+    padding: 18px 0px;
+  }
+  .sidebar.show {
+    left: 0;
+  }
+}

@@ -58,9 +58,14 @@
     </div>
 
     <!-- Modal Markup End -->
+    <!-- Overlay for sidebar specially -->
+    <div
+      id="overlay"
+      class="position-fixed top-0 end-0 bottom-0 start-0 vw-100 vh-100"
+    ></div>
 
     <div class="page-wrapper">
-      <div class="sidebar position-fixed top-0 bottom-0 vh-100">
+      <div id="sidebar" class="sidebar position-fixed top-0 bottom-0 vh-100">
         <div class="sidebar_inner">
           <div class="px-3 mb-4">
             <a href="#" class="logo d-inline block mx-auto"
@@ -664,7 +669,7 @@
       <div class="v-flex min-vh-100 d-flex flex-column">
         <header class="header-area">
           <div class="container-fluid px-4">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-4">
                 <button class="menu_bar d-xl-none" id="menu_bar">
                   <img src="assets/img/menu-bar.svg" alt="" class="img-fluid" />
