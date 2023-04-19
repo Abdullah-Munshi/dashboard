@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  // Script for Sidebar hide show under 1200px
   if (document.getElementById("menu_bar") !== null) {
     const menuBar = document.getElementById("menu_bar");
     const sideBar = document.getElementById("sidebar");
@@ -15,4 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
       overlay.classList.remove("show");
     });
   }
+
 });
