@@ -355,7 +355,7 @@
     </div>
     <div class="v-flex min-vh-100 d-flex flex-column">
       <header class="header-area">
-        <div class="container-fluid px-4">
+        <div class="container-fluid px-3 px-md-4">
           <div class="row align-items-center">
             <div class="col-4">
               <button class="menu_bar d-xl-none" id="menu_bar">
@@ -468,16 +468,16 @@
         </div>
       </header>
       <main class="main_content">
-        <div class="container-fluid px-4">
+        <div class="container-fluid px-3 px-md-4">
           <div class="advertisement">
             <img src="assets/img/advertisement.png" alt="" class="img-fluid" />
           </div>
 
           <div class="enquiry-wrap">
             <h2 class="primary-title mb-0">Enquiries</h2>
-            <div class="enquiry-right-zone d-flex align-items-center justify-content-end">
+            <div class="enquiry-right-zone d-flex align-items-center justify-content-center justify-content-md-end">
               <div class="dropdown">
-                <button class="box-btn sort-btn bg-transparent">
+                <button class="box-btn sort-btn bg-transparent" data-bs-toggle="dropdown">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.25 5.25H15.75" stroke="#787878" stroke-width="1.5" stroke-linecap="round" />
                     <path d="M4.5 9H13.5" stroke="#787878" stroke-width="1.5" stroke-linecap="round" />
@@ -485,9 +485,9 @@
                   </svg>
                   Filter
                 </button>
-                <div class="dropdown-menu border-0 sort-dropdown">
+                <div class="dropdown-menu border-0 filter-dropdown">
                   <form action="#" class="sort-form">
-                    <div class="input-box">
+                    <div class="input-inside">
                       <label for="" class="d-block">Select Enguiry Type</label>
                       <select name="" class="form-select">
                         <option value="">Select</option>
@@ -495,7 +495,7 @@
                         <option value="">Select 2</option>
                       </select>
                     </div>
-                    <div class="input-box">
+                    <div class="input-inside">
                       <label for="" class="d-block">Select Staff</label>
                       <select name="" class="form-select">
                         <option value="">Select</option>
@@ -505,10 +505,10 @@
                     </div>
 
                     <div class="twin-grid">
-                      <button type="submit" class="box-btn fill_primary">
+                      <button type="submit" class="box-btn fill_primary m-0">
                         Apply
                       </button>
-                      <button class="box-btn fill_black">Reset</button>
+                      <button class="box-btn fil_gray m-0">Reset</button>
                     </div>
                   </form>
                 </div>
@@ -541,7 +541,7 @@
 
           <div class="table_wrapper">
             <div class="table-query-wrap row">
-              <div class="col">
+              <div class="col-md-6 mb-4 mb-md-0">
                 <form action="#" class="input-inside tbl-search position-relative">
                   <input type="text" class="form-control" placeholder="Pesquisar">
                   <button class="position-absolute" type="submit">
@@ -550,8 +550,9 @@
                 </form>
               </div>
 
-              <div class="col">
-                <div class="pagination-size-show d-flex align-items-center justify-content-end ">
+              <div class="col-md-6">
+                <div
+                  class="pagination-size-show d-flex align-items-center justify-content-center justify-content-md-end ">
                   Showing <select name="" class="form-select page-size">
                     <option value="">6</option>
                     <option value="">10</option>
@@ -860,208 +861,15 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
-                    <td> <label class="checkbox-wrap">
-                        <input type="checkbox">
-                        <span class="checkbox"></span>
-                      </label></td>
-                    <td>
-                      <div class="cell_content">
-                        <p>4-7-2025 ramya <span class="d-inine orange-text">( 3Day)</span> (vsisa) (UnitedArabEmirates)
-                          (e-Visa OS Dave Single Entry)</p>
-                        <div class="type-actions">
-                          <a href="#">Finalize Pool</a>
-                          <a href="#">Drop Pool</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>6268656986</td>
-                    <td>
-                      <div class="tbl-action-wrap">
-                        <button class="single-action view">
-                          <img src="assets/img/eye.svg" alt="" class="img-fluid">
 
-                        </button>
-
-                        <button class="single-action edit">
-                          <img src="assets/img/edit-2.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action whatsapp">
-                          <img src="assets/img/whatsapp.svg" alt="" class="img-fluid">
-
-                        </button>
-                        <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
-                          <img src="assets/img/add.svg" alt="" class="img-fluid">
-                          Add Deadline
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td> <label class="checkbox-wrap">
-                        <input type="checkbox">
-                        <span class="checkbox"></span>
-                      </label></td>
-                    <td>
-                      <div class="cell_content">
-                        <p>4-7-2025 ramya <span class="d-inine orange-text">( 3Day)</span> (vsisa) (UnitedArabEmirates)
-                          (e-Visa OS Dave Single Entry)</p>
-                        <div class="type-actions">
-                          <a href="#">Finalize Pool</a>
-                          <a href="#">Drop Pool</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>6268656986</td>
-                    <td>
-                      <div class="tbl-action-wrap">
-                        <button class="single-action view">
-                          <img src="assets/img/eye.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action edit">
-                          <img src="assets/img/edit-2.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action whatsapp">
-                          <img src="assets/img/whatsapp.svg" alt="" class="img-fluid">
-
-                        </button>
-                        <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
-                          <img src="assets/img/add.svg" alt="" class="img-fluid">
-                          Add Deadline
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td> <label class="checkbox-wrap">
-                        <input type="checkbox">
-                        <span class="checkbox"></span>
-                      </label></td>
-                    <td>
-                      <div class="cell_content">
-                        <p>4-7-2025 ramya <span class="d-inine orange-text">( 3Day)</span> (vsisa) (UnitedArabEmirates)
-                          (e-Visa OS Dave Single Entry)</p>
-                        <div class="type-actions">
-                          <a href="#">Finalize Pool</a>
-                          <a href="#">Drop Pool</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>6268656986</td>
-                    <td>
-                      <div class="tbl-action-wrap">
-                        <button class="single-action view">
-                          <img src="assets/img/eye.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action edit">
-                          <img src="assets/img/edit-2.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action whatsapp">
-                          <img src="assets/img/whatsapp.svg" alt="" class="img-fluid">
-
-                        </button>
-                        <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
-                          <img src="assets/img/add.svg" alt="" class="img-fluid">
-                          Add Deadline
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td> <label class="checkbox-wrap">
-                        <input type="checkbox">
-                        <span class="checkbox"></span>
-                      </label></td>
-                    <td>
-                      <div class="cell_content">
-                        <p>4-7-2025 ramya <span class="d-inine orange-text">( 3Day)</span> (vsisa) (UnitedArabEmirates)
-                          (e-Visa OS Dave Single Entry)</p>
-                        <div class="type-actions">
-                          <a href="#">Finalize Pool</a>
-                          <a href="#">Drop Pool</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>6268656986</td>
-                    <td>
-                      <div class="tbl-action-wrap">
-                        <button class="single-action view">
-                          <img src="assets/img/eye.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action edit">
-                          <img src="assets/img/edit-2.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action whatsapp">
-                          <img src="assets/img/whatsapp.svg" alt="" class="img-fluid">
-
-                        </button>
-                        <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
-                          <img src="assets/img/add.svg" alt="" class="img-fluid">
-                          Add Deadline
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td> <label class="checkbox-wrap">
-                        <input type="checkbox">
-                        <span class="checkbox"></span>
-                      </label></td>
-                    <td>
-                      <div class="cell_content">
-                        <p>4-7-2025 ramya <span class="d-inine orange-text">( 3Day)</span> (vsisa) (UnitedArabEmirates)
-                          (e-Visa OS Dave Single Entry)</p>
-                        <div class="type-actions">
-                          <a href="#">Finalize Pool</a>
-                          <a href="#">Drop Pool</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>6268656986</td>
-                    <td>
-                      <div class="tbl-action-wrap">
-                        <button class="single-action view">
-                          <img src="assets/img/eye.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action edit">
-                          <img src="assets/img/edit-2.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action whatsapp">
-                          <img src="assets/img/whatsapp.svg" alt="" class="img-fluid">
-
-                        </button>
-                        <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
-                          <img src="assets/img/add.svg" alt="" class="img-fluid">
-                          Add Deadline
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
                 </tbody>
               </table>
             </div>
 
             <div class="bottom-pagination-wrapper row">
-              <div class="col-md-6">
-                <div class="pagination-size-show d-flex align-items-center ">
+              <div class="col-md-5">
+                <div
+                  class="pagination-size-show d-flex align-items-center justify-content-center jusity-content-md-start mb-4 mb-md-0 ">
                   Showing <select name="" class="form-select page-size">
                     <option value="">6</option>
                     <option value="">10</option>
@@ -1070,22 +878,32 @@
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <nav aria-label="Page navigation" class="numberd-pagination d-flex justify-content-end">
                   <ul class="pagination">
                     <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">Prev</span>
+                      <a class="page-link" href="#" aria-label="Previous" disabled>
+                        <span aria-hidden="true"><svg class="me-2" width="7" height="12" viewBox="0 0 7 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 10.5L0.947501 5.9475L5.5 1.395" stroke="#D9D9D9" stroke-width="1.3"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                          Prev</span>
                       </a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item"><a class="page-link" href="#">4</a></li>
                     <li class="page-item"><a class="page-link" href="#">...</a></li>
                     <li class="page-item">
                       <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">Next</span>
+                        <span aria-hidden="true">Next <svg class="ms-2" width="7" height="12" viewBox="0 0 7 12"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1.5L6.0525 6.0525L1.5 10.605" stroke="#575757" stroke-width="1.5"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
                       </a>
                     </li>
                   </ul>
@@ -1096,7 +914,7 @@
         </div>
       </main>
       <footer class="footer-area mt-auto">
-        <div class="container-fluid px-4">
+        <div class="container-fluid px-3 px-md-4">
           <p class="text-center m-0">
             Cowright © 2023
             <span class="text_primary d-inline-block">VisaClap</span> .
