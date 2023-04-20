@@ -13,6 +13,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -38,6 +39,8 @@ ol {
   z-index: 50;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -50,6 +53,8 @@ ol {
   border-right: 1px solid #ededed;
   width: 250px;
   background-color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   z-index: 90;
 }
@@ -61,6 +66,8 @@ ol {
 .sidebar_menu li,
 .dropdown-menu ul li {
   display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   border-radius: 6px;
 }
@@ -80,6 +87,8 @@ ol {
   font-weight: var(--fw_medium);
   padding: 9.5px 16px;
   line-height: 18px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -100,6 +109,8 @@ ol {
 
 .menu_icon svg path,
 .dropdown-menu ul a svg path {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   stroke: var(--secondary);
 }
@@ -122,7 +133,11 @@ ol {
   position: absolute;
   right: 8px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -132,6 +147,8 @@ ol {
 
 .sidebar_menu [data-bs-toggle="collapse"][aria-expanded="true"]::after {
   background: url(../img/right-angle-primary.svg) no-repeat center center;
+  -webkit-transform: translateY(-50%) rotateZ(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotateZ(90deg);
 }
 
@@ -144,6 +161,7 @@ ol {
 
 .dropdown-menu {
   background: #ffffff;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 20px;
@@ -170,6 +188,8 @@ ol {
   border: 1px solid #d9d9d9;
   border-radius: 6px;
   padding: 9px 16px !important;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   font-weight: 500;
   font-size: 12px;
@@ -234,9 +254,13 @@ ol {
 
 .enquiry-wrap {
   margin-bottom: 15px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -360,6 +384,8 @@ ol {
   color: var(--primary);
   font-weight: 500;
   text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   display: inline-block;
 }
@@ -373,9 +399,18 @@ ol {
 }
 
 .sort-indicator {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -485,6 +520,8 @@ ol {
   background-color: var(--primary);
   left: 0;
   bottom: -5px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   opacity: 0;
   visibility: hidden;
@@ -584,7 +621,9 @@ ol {
 }
 
 .twin-grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 25px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 25px;
 }
@@ -625,6 +664,7 @@ ol {
 }
 
 .modal-content {
+  -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #fff;
 }
@@ -693,8 +733,14 @@ ol {
     border: 0;
     width: 28px;
     height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-left: -3px;
   }
@@ -718,6 +764,7 @@ ol {
   }
 
   .enquiry-wrap {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -727,6 +774,7 @@ ol {
   }
 
   .enquery-modal-content .twin-grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 18px;
   }

@@ -18,4 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+
+
+  // Script/activation for perfect scrollbar
+  const ps = new
+    PerfectScrollbar('#sidebar', {
+      wheelSpeed: 2,
+      wheelPropagation: true,
+      minScrollbarLength: 20
+    });
+
+
+  // Script/activation for datepicker
+  flatpickr("#datepicker_one", {});
+
 });
