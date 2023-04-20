@@ -1041,6 +1041,27 @@ ol {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .apply-form {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-pricing-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-info-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-info-wrapper .ad-part:nth-child(2) {
+    border-top: 1px solid #E3E8F3;
+    border-bottom: 1px solid #E3E8F3;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .tbl-search {
     max-width: 100%;
