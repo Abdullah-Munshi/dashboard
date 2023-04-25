@@ -21,12 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Script/activation for perfect scrollbar
-  const ps = new
-    PerfectScrollbar('#sidebar', {
-      wheelSpeed: 2,
-      wheelPropagation: true,
-      minScrollbarLength: 20
-    });
+  if (document.getElementById('sidebar') !== null) {
+    const ps = new
+      PerfectScrollbar('#sidebar', {
+        wheelSpeed: 2,
+        wheelPropagation: true,
+        minScrollbarLength: 20
+      });
+  }
+
 
 
   // Script/activation for datepicker

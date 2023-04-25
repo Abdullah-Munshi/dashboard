@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- Plugin Css -->
+  <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
+  <link rel="stylesheet" href="assets/css/flatpickr.min.css">
+
+  <!-- Main Css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <div class="v-flex min-vh-100 d-flex flex-column">
+    <header class="header-area">
+      <div class="container-fluid px-3 px-md-4">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <button class="menu_bar d-xl-none" id="menu_bar">
+              <img src="assets/img/menu-bar.svg" alt="" class="img-fluid" />
+            </button>
+          </div>
+          <div class="col-8">
+            <div class="header-right d-flex align-items-center justify-content-end">
+              <ul class="notificaion-part mb-0">
+                <li class="dropdown">
+                  <a href="#" class="notification-triggger d-block position-relative" data-bs-toggle="dropdown">
+                    <span class="notification-alert-dot position-absolute rounded-circle"></span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.0165 2.42499C7.25816 2.42499 5.0165 4.66665 5.0165 7.42499V9.83332C5.0165 10.3417 4.79983 11.1167 4.5415 11.55L3.58316 13.1417C2.9915 14.125 3.39983 15.2167 4.48316 15.5833C8.07483 16.7833 11.9498 16.7833 15.5415 15.5833C16.5498 15.25 16.9915 14.0583 16.4415 13.1417L15.4832 11.55C15.2332 11.1167 15.0165 10.3417 15.0165 9.83332V7.42499C15.0165 4.67499 12.7665 2.42499 10.0165 2.42499Z"
+                        stroke="black" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" />
+                      <path
+                        d="M11.5579 2.66667C11.2996 2.59167 11.0329 2.53334 10.7579 2.5C9.95794 2.4 9.19128 2.45834 8.47461 2.66667C8.71628 2.05 9.31628 1.61667 10.0163 1.61667C10.7163 1.61667 11.3163 2.05 11.5579 2.66667Z"
+                        stroke="black" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M12.5166 15.8833C12.5166 17.2583 11.3916 18.3833 10.0166 18.3833C9.33327 18.3833 8.69993 18.1 8.24993 17.65C7.79993 17.2 7.5166 16.5667 7.5166 15.8833"
+                        stroke="black" stroke-width="1.3" stroke-miterlimit="10" />
+                    </svg>
+                  </a>
+
+                  <!-- <div class="dropdown-menu dropdown_style_one border-0">
+                      <ul class="h-100">
+                        <li>
+                          <a href="#" class="px-0 py-1">notification item</a>
+                        </li>
+                        <li>
+                          <a href="#" class="px-0 py-1">notification item</a>
+                        </li>
+                        <li>
+                          <a href="#" class="px-0 py-1">notification item</a>
+                        </li>
+                        <li>
+                          <a href="#" class="px-0 py-1">notification item</a>
+                        </li>
+                      </ul>
+                    </div> -->
+                </li>
+              </ul>
+              <ul class="user-part mb-0 p-0">
+                <li class="dropdown">
+                  <a href="#"
+                    class="user-trigger d-flex align-items-center justify-content-center rounded-circle text-decoration-none text-uppercase"
+                    data-bs-toggle="dropdown"><img src="assets/img/user.png" alt="nu"
+                      class="rounded-circle d-flex align-items-center justify-content-center" />
+                    <span class="d-inline-block">User1736</span></a>
+
+                  <div class="dropdown-menu user-dropdown border-0">
+                    <ul>
+                      <li>
+                        <a href="#" class="px-0 py-1"><span class="menu_icon"><svg width="18" height="18"
+                              viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M12.75 15.375H5.25C3 15.375 1.5 14.25 1.5 11.625V6.375C1.5 3.75 3 2.625 5.25 2.625H12.75C15 2.625 16.5 3.75 16.5 6.375V11.625C16.5 14.25 15 15.375 12.75 15.375Z"
+                                stroke="#575757" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M12.75 6.75L10.4025 8.625C9.63 9.24 8.3625 9.24 7.59 8.625L5.25 6.75"
+                                stroke="#575757" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg> </span>Send Email</a>
+                      </li>
+                      <li>
+                        <a href="#" class="px-0 py-1"><span class="menu_icon"><svg width="18" height="18"
+                              viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M6.375 14.25H6C3 14.25 1.5 13.5 1.5 9.75V6C1.5 3 3 1.5 6 1.5H12C15 1.5 16.5 3 16.5 6V9.75C16.5 12.75 15 14.25 12 14.25H11.625C11.3925 14.25 11.1675 14.3625 11.025 14.55L9.9 16.05C9.405 16.71 8.595 16.71 8.1 16.05L6.975 14.55C6.855 14.385 6.5775 14.25 6.375 14.25Z"
+                                stroke="#575757" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M11.9978 8.25H12.0046" stroke="#575757" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M8.99686 8.25H9.00359" stroke="#575757" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M5.99588 8.25H6.00262" stroke="#575757" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg> </span>Send Message</a>
+                      </li>
+                      <li>
+                        <a href="#" class="px-0 py-1"><span class="menu_icon"><svg width="18" height="18"
+                              viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 1.5V3.75" stroke="#575757" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M12 1.5V3.75" stroke="#575757" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M12 2.625C14.4975 2.76 15.75 3.7125 15.75 7.2375V11.8725C15.75 14.9625 15 16.5075 11.25 16.5075H6.75C3 16.5075 2.25 14.9625 2.25 11.8725V7.2375C2.25 3.7125 3.5025 2.7675 6 2.625H12Z"
+                                stroke="#575757" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M15.5625 13.2H2.4375" stroke="#575757" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M9 6.1875C8.0775 6.1875 7.2975 6.69 7.2975 7.665C7.2975 8.13 7.515 8.4825 7.845 8.7075C7.3875 8.9775 7.125 9.4125 7.125 9.9225C7.125 10.8525 7.8375 11.43 9 11.43C10.155 11.43 10.875 10.8525 10.875 9.9225C10.875 9.4125 10.6125 8.97 10.1475 8.7075C10.485 8.475 10.695 8.13 10.695 7.665C10.695 6.69 9.9225 6.1875 9 6.1875ZM9 8.3175C8.61 8.3175 8.325 8.085 8.325 7.7175C8.325 7.3425 8.61 7.125 9 7.125C9.39 7.125 9.675 7.3425 9.675 7.7175C9.675 8.085 9.39 8.3175 9 8.3175ZM9 10.5C8.505 10.5 8.145 10.2525 8.145 9.8025C8.145 9.3525 8.505 9.1125 9 9.1125C9.495 9.1125 9.855 9.36 9.855 9.8025C9.855 10.2525 9.495 10.5 9 10.5Z"
+                                fill="#575757" />
+                            </svg> </span>Schedule Meeting</a>
+                      </li>
+                      <li>
+                        <a href="#" class="box-btn d-block text-center mt-3">View Profile</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main_content">
+      <div class="container-fluid px-3 px-md-4">
+        <div class="fm_content">
+          <div class="step-top-info plc-2">
+            <h3>India to United States</h3>
+            <p class="mb-0">Valid for 10-Year 180-Days Of Stay <br>
+              Time to get visa 15-30-Days <br>
+              Visareel60-s <br>
+              Our Service Fees 100-4 <br>
+              Goona TourinUSA to see the Placesand Sight Seeings.</p>
+          </div>
+
+          <div class="fm_info_rw">
+            <h3 class="title-4"><span>Enquiry Information</span></h3>
+            <div class="four_grid">
+              <div class="input-inside">
+                <label for="">Name</label>
+                <input type="text" class="form-control" placeholder="Type your name here...">
+              </div>
+              <div class="input-inside">
+                <label for="">Email</label>
+                <input type="text" class="form-control" placeholder="Type your mail...">
+              </div>
+              <div class="input-inside">
+                <label for="">Mobile</label>
+                <input type="text" class="form-control" placeholder="Type your phone no">
+              </div>
+              <div class="input-inside">
+                <label for="">Mobile</label>
+                <input type="text" class="form-control" placeholder="Type your phone no">
+              </div>
+              <div class="input-inside">
+                <label for="">Follow Up Date</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+              <div class="input-inside">
+                <label for="">Enquiry Type</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Enquiry Type...</option>
+                  <option value="">Enquiry Type...</option>
+                  <option value="">Enquiry Type...</option>
+                  <option value="">Enquiry Type...</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="">Select Language</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select...</option>
+                  <option value="">Select...</option>
+                  <option value="">Select...</option>
+                  <option value="">Select...</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="">Select Language</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select...</option>
+                  <option value="">Select...</option>
+                  <option value="">Select...</option>
+                  <option value="">Select...</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="">Select Description</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select Description...</option>
+                  <option value="">Select Description...</option>
+                  <option value="">Select Description...</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="">Select Intersted Country</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select Intersted Country...</option>
+                  <option value="">Select Intersted Country...</option>
+                  <option value="">Select Intersted Country...</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="">City</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="">City</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                </select>
+              </div>
+
+              <div class="input-inside one_fourth">
+                <label for="">Description</label>
+                <textarea name="" id="" cols="1" rows="1" class="form-control"
+                  placeholder="Type description here..."></textarea>
+              </div>
+
+              <div class="input-inside">
+                <label for="">City</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="fm_info_rw">
+            <h3 class="title-4"><span>General Information</span></h3>
+            <div class="four_grid">
+              <div class="input-inside">
+                <label for="">Sola Name</label>
+                <input type="text" class="form-control" placeholder="Type your name here...">
+              </div>
+              <div class="input-inside">
+                <label for="">Gender</label>
+                <div class="radio-group">
+                  <label class="checkbox-wrap round with-text">Male
+                    <input type="radio" name="gender">
+                    <span class="checkbox"></span>
+                  </label>
+
+                  <label class="checkbox-wrap round with-text">Female
+                    <input type="radio" name="gender">
+                    <span class="checkbox"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="input-inside">
+                <label for="">Do you watch Movies?</label>
+                <div class="radio-group">
+                  <label class="checkbox-wrap round with-text">Yes
+                    <input type="radio" name="film">
+                    <span class="checkbox"></span>
+                  </label>
+
+                  <label class="checkbox-wrap round with-text">No
+                    <input type="radio" name="film">
+                    <span class="checkbox"></span>
+                  </label>
+                  <label class="checkbox-wrap round with-text">Sometimes
+                    <input type="radio" name="film">
+                    <span class="checkbox"></span>
+                  </label>
+                  <label class="checkbox-wrap round with-text">Never
+                    <input type="radio" name="film">
+                    <span class="checkbox"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="input-inside">
+                <label for="">City</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                </select>
+              </div>
+
+              <div class="input-inside">
+                <label for="">Education</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select Education</option>
+                  <option value="">Select Education</option>
+                  <option value="">Select Education</option>
+                  <option value="">Select Education</option>
+                </select>
+              </div>
+
+              <div class="input-inside">
+                <label for="">Your Birthday</label>
+                <div class="position-relative with-icon-input">
+                  <input id="datepicker_one" type="date" class="form-control" placeholder="MM/DD/YYYY">
+                  <span
+                    class="input-icon position-absolute start-0 top-0 bottom-0 h-100 d-inline-flex align-items-center justify-content-center"><img
+                      src="assets/img/calendar-white.svg" alt="" class="img-fluid"></span>
+                </div>
+              </div>
+              <div class="input-inside">
+                <label for="">City</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="">City</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                </select>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="fm_info_rw">
+            <h3 class="title-4"><span>Passport Information</span></h3>
+            <div class="four_grid">
+              <div class="input-inside one_fourth">
+                <label for="">Description</label>
+                <textarea name="" id="" cols="1" rows="1" class="form-control"
+                  placeholder="Type description here..."></textarea>
+              </div>
+
+              <div class="input-inside">
+                <label for="">City</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="fm_info_rw">
+            <h3 class="title-4"><span>Travel Information</span></h3>
+            <div class="four_grid">
+              <div class="input-inside">
+                <label for="">Sola Name</label>
+                <input type="text" class="form-control" placeholder="Type your name here...">
+              </div>
+
+              <div class="input-inside">
+                <label for="">Gender</label>
+                <div class="radio-group">
+                  <label class="checkbox-wrap round with-text">Male
+                    <input type="radio" name="gender">
+                    <span class="checkbox"></span>
+                  </label>
+
+                  <label class="checkbox-wrap round with-text">Female
+                    <input type="radio" name="gender">
+                    <span class="checkbox"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="input-inside">
+                <label for="">Do you watch Movies?</label>
+                <div class="radio-group">
+                  <label class="checkbox-wrap round with-text">Yes
+                    <input type="radio" name="film">
+                    <span class="checkbox"></span>
+                  </label>
+
+                  <label class="checkbox-wrap round with-text">No
+                    <input type="radio" name="film">
+                    <span class="checkbox"></span>
+                  </label>
+                  <label class="checkbox-wrap round with-text">Sometimes
+                    <input type="radio" name="film">
+                    <span class="checkbox"></span>
+                  </label>
+                  <label class="checkbox-wrap round with-text">Never
+                    <input type="radio" name="film">
+                    <span class="checkbox"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="input-inside">
+                <label for="">City</label>
+                <select name="" id="" class="form-select">
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                  <option value="">Select City...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal_action_btns type-2 mb-4 mb-lg-5 d-block d-md-flex  align-items-center justify-content-between">
+            <h5 class="totalPrice mb-0 me-0 me-md-3 mb-3 mb-md-0">TotalPrice: $ 260</h5>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-end"><button>
+                <button class="box-btn fill_primary">Submit</button>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="footer-area mt-auto">
+      <div class="container-fluid px-3 px-md-4">
+        <p class="text-center m-0">
+          Cowright © 2023
+          <span class="text_primary d-inline-block">VisaClap</span> .
+          Alrights reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- Plugin JS -->
+  <script src="assets/js/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/flatpickr.js"></script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
