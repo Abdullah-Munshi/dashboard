@@ -1130,6 +1130,17 @@ ol {
   padding-right: 24px !important;
 }
 
+.totalPrice {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #454CDE;
+}
+
+.twin-grid.tripple {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* apply-visa page css end */
 
 /* media query */
@@ -1290,5 +1301,9 @@ ol {
 
   .step-top-info h3 {
     font-size: 22px;
+  }
+
+  .totalPrice {
+    text-align: center;
   }
 }
