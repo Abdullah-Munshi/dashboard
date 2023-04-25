@@ -360,7 +360,7 @@ ol {
   -o-transition: 0.3s;
   transition: 0.3s;
   visibility: hidden;
-  top: 1px;
+  top: 1.5px;
 }
 
 .checkbox-wrap input[type="checkbox"]:checked+.checkbox::after,
@@ -1228,6 +1228,18 @@ ol {
 .four_grid .form-control,
 .four_grid .form-select {
   background-color: transparent;
+}
+
+.checkbox-wrap.with-text.existcheck {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #454CDE;
+  margin-bottom: 15px;
+}
+
+.checkbox-wrap.with-text.existcheck .checkbox {
+  border-color: var(--primary);
 }
 
 /* apply-visa page css end */

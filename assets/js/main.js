@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   // Script for Sidebar hide show under 1200px
-  if (document.getElementById("menu_bar") !== null) {
+  if (document.getElementById("menu_bar") !== null && document.getElementById("overlay") !== null) {
     const menuBar = document.getElementById("menu_bar");
     const sideBar = document.getElementById("sidebar");
     const overlay = document.getElementById("overlay");
