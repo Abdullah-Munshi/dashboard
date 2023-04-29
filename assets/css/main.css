@@ -1244,6 +1244,31 @@ ol {
 
 /* apply-visa page css end */
 
+/* report page css start */
+.rpt-filter-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: flex-end;
+}
+
+.form-btns .box-btn {
+  height: 40px;
+  min-width: 100px;
+}
+
+.form-btns button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.cmn-blk {
+  border: 1px solid #EDEDED;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* report page css end */
+
 /* media query */
 @media screen and (max-width: 1439px) {
   .cell_content p {
