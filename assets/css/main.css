@@ -1265,6 +1265,44 @@ ol {
   border: 1px solid #EDEDED;
   border-radius: 6px;
   padding: 20px;
+  background-color: #EDEDED;
+}
+
+.table.type-2 {
+  min-width: 1590px;
+}
+
+.table-responsive-xl.type-2 {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.table.type-2 tr th:last-child,
+.table.type-2 tr td:last-child {
+  padding-right: 20px;
+  width: 355px;
+}
+
+.type-2 .tbl-action-wrap button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.table-up-crud {
+  margin-bottom: 20px;
+}
+
+.cmn-blk .form-select,
+.cmn-blk .form-control {
+  background-color: #fff;
+}
+
+.box-btn svg path {
+  transition: .3s;
+  stroke: var(--secondary);
+}
+
+.box-btn:hover svg path {
+  stroke: #fff;
 }
 
 /* report page css end */

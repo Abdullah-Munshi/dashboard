@@ -466,6 +466,32 @@
           </form>
 
           <div class="table_wrapper">
+            <div class="table-up-crud d-flex align-items-center justify-content-between">
+              <button class="box-btn fil_gray create-batch"><svg class="me-2" width="18" height="18" viewBox="0 0 18 18"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.5 9H13.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M9 13.5V4.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Create Batch</button>
+              <button class="box-btn fil_gray send-mail"><svg class="me-2" width="18" height="18" viewBox="0 0 24 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8V2L10 4" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M12 2L14 4" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M7 12C3 12 3 13.79 3 16V17C3 19.76 3 22 8 22H16C20 22 21 19.76 21 17V16C21 13.79 21 12 17 12C16 12 15.72 12.21 15.2 12.6L14.18 13.68C13 14.94 11 14.94 9.81 13.68L8.8 12.6C8.28 12.21 8 12 7 12Z"
+                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5 12V10C5 7.99004 5 6.33004 8 6.04004" stroke="#292D32" stroke-width="1.5"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M19 12V10C19 7.99004 19 6.33004 16 6.04004" stroke="#292D32" stroke-width="1.5"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Send Mail</button>
+            </div>
             <div class="table-query-wrap row">
               <div class="col-md-6 mb-4 mb-md-0">
                 <form action="#" class="input-inside tbl-search position-relative">
@@ -487,8 +513,8 @@
                 </div>
               </div>
             </div>
-            <div class="table-responsive-xl">
-              <table class="table mb-0">
+            <div class="table-responsive-xl type-2">
+              <table class="table type-2 mb-0">
                 <thead>
                   <tr>
                     <th>
@@ -503,12 +529,37 @@
                           <img class="desending img-fluid" src="assets/img/downarrow.svg" alt="">
                         </span></div>
                     </th>
-                    <th>Mobile <div class="d-inline-flex align-items-center">
-                        <div class="d-inline-flex align-items-center">Name<span class="sort-indicator ms-2">
-                            <img class="asending img-fluid mb-1" src="assets/img/uparrow.svg" alt="">
-                            <img class="desending img-fluid" src="assets/img/downarrow.svg" alt="">
-                          </span></div>
-                      </div>
+                    <th>
+                      <div class="d-inline-flex align-items-center">Mobile<span class="sort-indicator ms-2">
+                          <img class="asending img-fluid mb-1" src="assets/img/uparrow.svg" alt="">
+                          <img class="desending img-fluid" src="assets/img/downarrow.svg" alt="">
+                        </span></div>
+                    </th>
+                    <th>
+                      <div class="d-inline-flex align-items-center">Enquiry Type<span class="sort-indicator ms-2">
+                          <img class="asending img-fluid mb-1" src="assets/img/uparrow.svg" alt="">
+                          <img class="desending img-fluid" src="assets/img/downarrow.svg" alt="">
+                        </span></div>
+                    </th>
+
+                    <th>
+                      <div class="d-inline-flex align-items-center">Follow Up Date<span class="sort-indicator ms-2">
+                          <img class="asending img-fluid mb-1" src="assets/img/uparrow.svg" alt="">
+                          <img class="desending img-fluid" src="assets/img/downarrow.svg" alt="">
+                        </span></div>
+                    </th>
+
+                    <th>
+                      <div class="d-inline-flex align-items-center">Interested Country<span class="sort-indicator ms-2">
+                          <img class="asending img-fluid mb-1" src="assets/img/uparrow.svg" alt="">
+                          <img class="desending img-fluid" src="assets/img/downarrow.svg" alt="">
+                        </span></div>
+                    </th>
+                    <th>
+                      <div class="d-inline-flex align-items-center">Current Pull<span class="sort-indicator ms-2">
+                          <img class="asending img-fluid mb-1" src="assets/img/uparrow.svg" alt="">
+                          <img class="desending img-fluid" src="assets/img/downarrow.svg" alt="">
+                        </span></div>
                     </th>
                     <th>Actions</th>
                   </tr>
@@ -530,6 +581,10 @@
                       </div>
                     </td>
                     <td>6268656986</td>
+                    <td>Flight</td>
+                    <td>07-Apr-2023</td>
+                    <td>-</td>
+                    <td>No Status</td>
                     <td>
                       <div class="tbl-action-wrap">
                         <button class="single-action view">
@@ -549,6 +604,10 @@
                         <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
                           <img src="assets/img/add.svg" alt="" class="img-fluid">
                           Add Deadline
+                        </button>
+                        <button class="box-btn fill_primary">
+
+                          Follow Up
                         </button>
                       </div>
                     </td>
@@ -569,6 +628,10 @@
                       </div>
                     </td>
                     <td>6268656986</td>
+                    <td>Flight</td>
+                    <td>07-Apr-2023</td>
+                    <td>-</td>
+                    <td>No Status</td>
                     <td>
                       <div class="tbl-action-wrap">
                         <button class="single-action view">
@@ -588,6 +651,10 @@
                         <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
                           <img src="assets/img/add.svg" alt="" class="img-fluid">
                           Add Deadline
+                        </button>
+                        <button class="box-btn fill_primary">
+
+                          Follow Up
                         </button>
                       </div>
                     </td>
@@ -608,6 +675,10 @@
                       </div>
                     </td>
                     <td>6268656986</td>
+                    <td>Flight</td>
+                    <td>07-Apr-2023</td>
+                    <td>-</td>
+                    <td>No Status</td>
                     <td>
                       <div class="tbl-action-wrap">
                         <button class="single-action view">
@@ -627,6 +698,10 @@
                         <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
                           <img src="assets/img/add.svg" alt="" class="img-fluid">
                           Add Deadline
+                        </button>
+                        <button class="box-btn fill_primary">
+
+                          Follow Up
                         </button>
                       </div>
                     </td>
@@ -647,6 +722,10 @@
                       </div>
                     </td>
                     <td>6268656986</td>
+                    <td>Flight</td>
+                    <td>07-Apr-2023</td>
+                    <td>-</td>
+                    <td>No Status</td>
                     <td>
                       <div class="tbl-action-wrap">
                         <button class="single-action view">
@@ -666,6 +745,10 @@
                         <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
                           <img src="assets/img/add.svg" alt="" class="img-fluid">
                           Add Deadline
+                        </button>
+                        <button class="box-btn fill_primary">
+
+                          Follow Up
                         </button>
                       </div>
                     </td>
@@ -686,6 +769,10 @@
                       </div>
                     </td>
                     <td>6268656986</td>
+                    <td>Flight</td>
+                    <td>07-Apr-2023</td>
+                    <td>-</td>
+                    <td>No Status</td>
                     <td>
                       <div class="tbl-action-wrap">
                         <button class="single-action view">
@@ -706,88 +793,13 @@
                           <img src="assets/img/add.svg" alt="" class="img-fluid">
                           Add Deadline
                         </button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td> <label class="checkbox-wrap">
-                        <input type="checkbox">
-                        <span class="checkbox"></span>
-                      </label></td>
-                    <td>
-                      <div class="cell_content">
-                        <p>4-7-2025 ramya <span class="d-inine orange-text">( 3Day)</span> (vsisa) (UnitedArabEmirates)
-                          (e-Visa OS Dave Single Entry)</p>
-                        <div class="type-actions">
-                          <a href="#">Finalize Pool</a>
-                          <a href="#">Drop Pool</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>6268656986</td>
-                    <td>
-                      <div class="tbl-action-wrap">
-                        <button class="single-action view">
-                          <img src="assets/img/eye.svg" alt="" class="img-fluid">
+                        <button class="box-btn fill_primary">
 
-                        </button>
-
-                        <button class="single-action edit">
-                          <img src="assets/img/edit-2.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action whatsapp">
-                          <img src="assets/img/whatsapp.svg" alt="" class="img-fluid">
-
-                        </button>
-                        <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
-                          <img src="assets/img/add.svg" alt="" class="img-fluid">
-                          Add Deadline
+                          Follow Up
                         </button>
                       </div>
                     </td>
                   </tr>
-                  <tr>
-                    <td> <label class="checkbox-wrap">
-                        <input type="checkbox">
-                        <span class="checkbox"></span>
-                      </label></td>
-                    <td>
-                      <div class="cell_content">
-                        <p>4-7-2025 ramya <span class="d-inine orange-text">( 3Day)</span> (vsisa) (UnitedArabEmirates)
-                          (e-Visa OS Dave Single Entry)</p>
-                        <div class="type-actions">
-                          <a href="#">Finalize Pool</a>
-                          <a href="#">Drop Pool</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>6268656986</td>
-                    <td>
-                      <div class="tbl-action-wrap">
-                        <button class="single-action view">
-                          <img src="assets/img/eye.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action edit">
-                          <img src="assets/img/edit-2.svg" alt="" class="img-fluid">
-
-                        </button>
-
-                        <button class="single-action whatsapp">
-                          <img src="assets/img/whatsapp.svg" alt="" class="img-fluid">
-
-                        </button>
-                        <button class="box-btn fill_primary" data-bs-toggle="modal" data-bs-target="#enquery">
-                          <img src="assets/img/add.svg" alt="" class="img-fluid">
-                          Add Deadline
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-
                 </tbody>
               </table>
             </div>
