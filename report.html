@@ -23,7 +23,116 @@
 </head>
 
 <body>
+  <!-- Modal Markup Start -->
+  <div class="modal fade" id="enquery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header">
+          <h1 class="modal-title">Add Enquiry</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="enquery-modal-content">
+            <div class="twin-grid">
+              <div class="input-inside">
+                <label for="" class="d-block">Name</label>
+                <input type="text" class="form-control" placeholder="Your name here">
+              </div>
+              <div class="input-inside">
+                <label for="" class="d-block">Email </label>
+                <input type="text" class="form-control" placeholder="Your email here">
+              </div>
+            </div>
+            <div class="twin-grid">
+              <div class="input-inside">
+                <label for="" class="d-block">Mobile</label>
+                <input type="text" class="form-control" placeholder="Your mobile here">
+              </div>
+              <div class="input-inside">
+                <label for="" class="d-block">Follow Up Date</label>
+                <div class="position-relative with-icon-input">
+                  <input id="datepicker_one" type="date" class="form-control" placeholder="MM/DD/YYYY">
+                  <span
+                    class="input-icon position-absolute start-0 top-0 bottom-0 h-100 d-inline-flex align-items-center justify-content-center"><img
+                      src="assets/img/calendar-white.svg" alt="" class="img-fluid"></span>
+                </div>
+              </div>
+            </div>
+            <div class="twin-grid">
+              <div class="input-inside">
+                <label for="" class="d-block">Enguiry Type</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="input-inside">
+                <label for="" class="d-block">Select Language</label>
+                <select name="" class="form-select">
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+                  <option value="">Option 4</option>
+                  <option value="">Option 5</option>
+                </select>
+              </div>
+            </div>
+            <div class="twin-grid">
+              <div class="input-inside">
+                <label for="" class="d-block">Select Description</label>
+                <select name="" class="form-select">
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+                  <option value="">Option 4</option>
+                  <option value="">Option 5</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="" class="d-block">Select Interested Country</label>
+                <select name="" class="form-select">
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+                  <option value="">Option 4</option>
+                  <option value="">Option 5</option>
+                </select>
+              </div>
+            </div>
+            <div class="twin-grid">
+              <div class="input-inside">
+                <label for="" class="d-block">Select Visa</label>
+                <select name="" class="form-select">
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+                  <option value="">Option 4</option>
+                  <option value="">Option 5</option>
+                </select>
+              </div>
+              <div class="input-inside">
+                <label for="" class="d-block">Assign Enquiry to Staff</label>
+                <select name="" class="form-select">
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+                  <option value="">Option 4</option>
+                  <option value="">Option 5</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-inside mb-4">
+              <label for="" class="d-block">Description</label>
+              <textarea name="" cols="30" rows="5" class="form-control" placeholder="Description here"></textarea>
+            </div>
+            <div class="twin-grid mb-0">
+              <button type="submit" class="box-btn fill_primary">Submit</button>
+              <button class="box-btn fil_gray cancel-btn">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal Markup End -->
   <!-- Overlay for sidebar specially -->
   <div id="overlay" class="position-fixed top-0 end-0 bottom-0 start-0 vw-100 vh-100"></div>
 
