@@ -79,7 +79,8 @@ ol {
 
 .sidebar_menu a,
 .dropdown-menu ul a,
-.subpage_menu li a {
+.subpage_menu li a,
+.subpage_menu li button {
   display: block;
   font-size: var(--fs_sm);
   color: var(--secondary);
@@ -91,7 +92,10 @@ ol {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-
+.subpage_menu li button {
+  background-color: transparent;
+  border: 0;
+}
 .sidebar_menu li.active a,
 .sidebar_menu li:hover a {
   color: var(--primary);
@@ -510,12 +514,16 @@ ol {
   padding-left: 12px;
 }
 
-.subpage_menu li a {
+.subpage_menu li a,
+.subpage_menu li button {
   position: relative;
   padding: 7px 0 !important;
 }
-
-.subpage_menu li a::after {
+.subpage_menu li button:hover {
+	color: var(--primary);
+}
+.subpage_menu li a::after,
+.subpage_menu li button::after {
   content: "";
   position: absolute;
   width: 10%;
@@ -530,7 +538,8 @@ ol {
   visibility: hidden;
 }
 
-.subpage_menu li.active a::after {
+.subpage_menu li.active a::after,
+.subpage_menu li button.active::after {
   opacity: 1;
   visibility: visible;
   width: 100%;
